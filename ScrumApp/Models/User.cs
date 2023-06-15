@@ -13,7 +13,15 @@ namespace ScrumApp.Models
         [BsonElement("User_Name")]
         public string User_Name { get; set; } = null!;
 
-        
+        [BsonElement("Board_Ids")]
+        public BoardIds BoardIds { get; set; } = new BoardIds();
 
+
+
+    }
+    public class BoardIds
+    {
+        [BsonElement("bid")]
+        public string Bid { get; set; } = null!;
     }
 }
